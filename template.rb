@@ -17,7 +17,7 @@ run 'bundle'
 generate 'mongoid:config'
 generate 'rspec:install'
 generate 'devise:install'
-generate 'devise User'
+generate 'devise', 'User'
 
 git :init
 git :add => '.'
