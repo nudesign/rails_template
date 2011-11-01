@@ -16,7 +16,7 @@ gem "bson_ext"
 
 gem "jquery-rails"
 gem "devise"
-gem "publish"
+# gem "publish"
 gem "mongoid_slug"
 gem "attachment_magick"
 gem "kaminari", "0.12.4"
