@@ -13,6 +13,7 @@ get 'https://github.com/nudesign/rails_template/raw/master/Gemfile', 'Gemfile'
 run 'bundle'
 
 generate 'mongoid:config'
+generate 'rspec:install'
 
 git :init
 git :add => '.'
