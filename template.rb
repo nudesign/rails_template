@@ -1,3 +1,4 @@
+remove_file '.gitignore'
 remove_file 'Gemfile'
 remove_dir 'test'
 
@@ -8,6 +9,7 @@ require 'active_resource/railtie'
 require 'sprockets/railtie'
 requires
 
+get 'https://github.com/nudesign/rails_template/raw/master/.gitignore', '.gitignore'
 get 'https://github.com/nudesign/rails_template/raw/master/Gemfile', 'Gemfile'
 
 run 'bundle'
