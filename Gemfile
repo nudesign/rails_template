@@ -18,7 +18,7 @@ gem "jquery-rails"
 gem "devise"
 # gem "publish"
 gem "mongoid_slug"
-gem "attachment_magick"
+# gem "attachment_magick"
 gem "kaminari", "0.12.4"
 
 # To use ActiveModel has_secure_password
