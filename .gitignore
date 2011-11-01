@@ -1,0 +1,7 @@
+.bundle
+.DS_Store
+.rvmrc
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
