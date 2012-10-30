@@ -1,6 +1,6 @@
 remove_file 'Gemfile'
 
-get 'https://github.com/nudesign/rails_template/raw/master/Gemfile', 'Gemfile'
+get 'https://raw.github.com/nudesign/rails_template/master/Gemfile', 'Gemfile'
 
 run 'bundle'
 
@@ -8,7 +8,8 @@ generate 'mongoid:config'
 
 generate 'rspec:install'
 remove_file 'spec/spec_helper.rb'
-get '///Users/tiago/Sites/nudesign/rails_template/spec_helper.rb', 'spec/spec_helper.rb'
+get 'https://raw.github.com/nudesign/rails_template/master/spec_helper.rb', 'spec/spec_helper.rb'
+get 'https://raw.github.com/nudesign/rails_template/master/controller_macros.rb', 'spec/support/controller_macros.rb'
 
 generate 'jasmine:install'
 generate 'jasmine:examples'
