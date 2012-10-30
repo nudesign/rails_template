@@ -37,7 +37,7 @@ gem 'devise', '~> 2.1.0'
 # gem 'debugger'
 
 group :development do
-  gem 'guard',       '~> 1.4.0'
+  gem 'guard',       '~> 1.5.0'
   gem 'guard-rspec', '~> 2.1.0'
   gem 'rb-fsevent',  '~> 0.9.0'
 
