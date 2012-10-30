@@ -42,7 +42,7 @@ group :development do
   gem 'rb-fsevent',  '~> 0.9.0'
 
   # LiveReload
-  gem 'guard-livereload', '~> 1.0.0'
+  gem 'guard-livereload', '~> 1.1.0'
   gem 'rack-livereload',  '~> 0.3.0'
   gem 'yajl-ruby',        '~> 1.1.0'
 end
@@ -54,5 +54,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'simplecov', '~> 0.7.0', require: false
+  gem 'database_cleaner', '~> 0.9.1'
+  gem 'simplecov',        '~> 0.7.0', require: false
 end
