@@ -28,6 +28,9 @@ run 'rails g controller home index --view-specs'
 
 route("root to: 'home#index'")
 
+insert_into_file 'app/views/layouts/application.html.erb', "  <%= dispatcher_tag %>\n", after: "<%= csrf_meta_tags %>\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
+
 git :init
 git :add => '.'
 git :commit => '-m "initial commit"'
