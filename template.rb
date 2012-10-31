@@ -2,7 +2,7 @@ remove_file 'Gemfile'
 
 get 'https://raw.github.com/nudesign/rails_template/master/Gemfile', 'Gemfile'
 
-run 'bundle'
+run 'bundle update'
 
 generate 'mongoid:config'
 
