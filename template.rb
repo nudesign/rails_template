@@ -8,6 +8,7 @@ generate 'mongoid:config'
 
 generate 'rspec:install'
 remove_file 'spec/spec_helper.rb'
+
 get 'https://raw.github.com/nudesign/rails_template/master/spec_helper.rb', 'spec/spec_helper.rb'
 get 'https://raw.github.com/nudesign/rails_template/master/controller_macros.rb', 'spec/support/controller_macros.rb'
 
