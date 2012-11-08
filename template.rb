@@ -12,6 +12,9 @@ remove_file 'spec/spec_helper.rb'
 get 'https://raw.github.com/nudesign/rails_template/master/spec_helper.rb', 'spec/spec_helper.rb'
 get 'https://raw.github.com/nudesign/rails_template/master/controller_macros.rb', 'spec/support/controller_macros.rb'
 
+remove_file 'app/views/layouts/application.html.erb'
+get 'https://raw.github.com/nudesign/rails_template/master/views/application.html.erb', 'app/views/layouts/application.html.erb'
+
 generate 'jasmine:install'
 generate 'jasmine:examples'
 
@@ -28,7 +31,6 @@ run 'rails g controller home index --view-specs'
 
 route("root to: 'home#index'")
 
-insert_into_file 'app/views/layouts/application.html.erb', "  <%= dispatcher_tag %>\n", after: "<%= csrf_meta_tags %>\n"
 insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
 
 git :init
