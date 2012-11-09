@@ -25,6 +25,8 @@
     </p>
   <![endif]-->
 
+  <% unless notice.nil? %><p id="notice"><%= notice %></p><% end %>
+
 <%= yield %>
 
   <%= render "grid" if Rails.env.development? %>
