@@ -36,8 +36,10 @@ get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/ve
 
 # vendor javascripts
 get 'https://raw.github.com/nudesign/rails_template/master/assets/javascripts/vendor/hugrid.js',                        'vendor/assets/javascripts/hugrid.js'
-insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
+get 'https://raw.github.com/nudesign/rails_template/master/assets/javascripts/vendor/modernizr.js',                     'vendor/assets/javascripts/modernizr.js'
 insert_into_file 'app/assets/javascripts/application.js', "//= require hugrid\n", after: "//= require jquery_ujs\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require modernizr\n", after: "//= require jquery_ujs\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
 
 # generators
 generate 'jasmine:install'
