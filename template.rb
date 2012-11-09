@@ -18,6 +18,7 @@ get 'https://raw.github.com/nudesign/rails_template/master/controller_macros.rb'
 remove_file 'app/views/layouts/application.html.erb'
 get 'https://raw.github.com/nudesign/rails_template/master/views/application.html.erb',    'app/views/layouts/application.html.erb'
 get 'https://raw.github.com/nudesign/rails_template/master/views/_grid.html.erb',          'app/views/application/_grid.html.erb'
+get 'https://raw.github.com/nudesign/rails_template/master/views/_form_messages.html.erb', 'app/views/application/_form_messages.html.erb'
 
 # app stylesheets
 remove_file 'app/assets/stylesheets/application.css'

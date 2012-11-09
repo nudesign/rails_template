@@ -1,0 +1,10 @@
+<% if object && object.respond_to?(:errors) && object.errors.any? %>
+  <div id="error_explanation" class="alert-error">
+    <h2><%= "#{ object.class.model_name.human } não foi enviado(a) pelas seguintes razões:" %></h2>
+    <ul>
+      <% object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
