@@ -12,15 +12,15 @@
   border-top-right-radius: 2px 2px;
 }
 
-#error_explanation h2,
-.form-messages h2 {
+#error_explanation .form-message-title,
+.form-messages .form-message-title {
   @include title(#C00);
   @include font1;
   margin: 0px 0px 0px 0px;
 }
 
-#error_explanation ul,
-.form-messages ul {
+#error_explanation .form-message-items,
+.form-messages .form-message-items {
   list-style: disc inside;
 }
 

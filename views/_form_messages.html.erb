@@ -1,7 +1,7 @@
 <% if object && object.respond_to?(:errors) && object.errors.any? %>
   <div id="error_explanation" class="alert-error">
-    <h2><%= "#{ object.class.model_name.human } não foi enviado(a) pelas seguintes razões:" %></h2>
-    <ul>
+    <h2 class="form-message-title"><%= "#{ object.class.model_name.human } não foi enviado(a) pelas seguintes razões:" %></h2>
+    <ul class="form-message-items">
       <% object.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
