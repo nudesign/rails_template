@@ -14,9 +14,10 @@ remove_file 'spec/spec_helper.rb'
 get 'https://raw.github.com/nudesign/rails_template/master/spec_helper.rb', 'spec/spec_helper.rb'
 get 'https://raw.github.com/nudesign/rails_template/master/controller_macros.rb', 'spec/support/controller_macros.rb'
 
-# application layout
+# application layout and default partials
 remove_file 'app/views/layouts/application.html.erb'
-get 'https://raw.github.com/nudesign/rails_template/master/views/application.html.erb', 'app/views/layouts/application.html.erb'
+get 'https://raw.github.com/nudesign/rails_template/master/views/application.html.erb',    'app/views/layouts/application.html.erb'
+get 'https://raw.github.com/nudesign/rails_template/master/views/_grid.html.erb',          'app/views/application/_grid.html.erb'
 
 # app stylesheets
 remove_file 'app/assets/stylesheets/application.css'
@@ -33,7 +34,9 @@ get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/ve
 get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/vendor/hugrid.css',                       'vendor/assets/stylesheets/hugrid.css'
 
 # vendor javascripts
+get 'https://raw.github.com/nudesign/rails_template/master/assets/javascripts/vendor/hugrid.js',                        'vendor/assets/javascripts/hugrid.js'
 insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require hugrid\n", after: "//= require jquery_ujs\n"
 
 # generators
 generate 'jasmine:install'

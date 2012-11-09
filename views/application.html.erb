@@ -27,5 +27,6 @@
 
 <%= yield %>
 
+  <%= render "grid" if Rails.env.development? %>
 </body>
 </html>
