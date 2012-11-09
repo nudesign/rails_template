@@ -1,0 +1,15 @@
+en:
+  publisher:
+    confirm: "are you sure?"
+    new: "create new"
+    list_all: "list all"
+    listing: "listing"
+    destroy: "destroy"
+    edit: "edit"
+    editing: "editing"
+    preview: "preview"
+    draft: "draft"
+    published: "published"
+    save: "save"
+    saving: "saving…"
+    or: "or"

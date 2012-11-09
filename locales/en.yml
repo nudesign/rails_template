@@ -1,0 +1,16 @@
+en:
+  views:
+    pagination:
+      previous: "&nbsp"
+      next: "&nbsp"
+    
+  attributes:
+    attr: 'attr'
+    
+  date:
+    formats:
+      default: '%m/%d/%Y'
+      short: '%d de %B'
+      long: '%d de %B de %Y'
+      month_year: '%B %Y'
+      just_year: '%Y'

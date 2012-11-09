@@ -42,6 +42,10 @@ insert_into_file 'app/assets/javascripts/application.js', "//= require hugrid\n"
 insert_into_file 'app/assets/javascripts/application.js', "//= require modernizr\n", after: "//= require jquery_ujs\n"
 insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
 
+#locale files
+remove_file 'config/locales'
+directory 'https://raw.github.com/nudesign/rails_template/master/locales', 'config/locales'
+
 # generators
 generate 'jasmine:install'
 
