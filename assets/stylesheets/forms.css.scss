@@ -1,0 +1,50 @@
+/* FORM LAYOUT */
+.field-group {
+  @include clearfix;
+}
+
+.field {
+  @include clearfix;
+  label {
+    @include title;
+    &.inline {
+      @include text;
+      display: inline;
+      padding-left: $grid-halfgutter;
+    }
+  }
+}
+
+.actions {
+  background: #EEE;
+  border-top: 1px solid #AAA;
+  bottom: 0px;
+  left: 0px;
+  padding: $grid-gutter;
+  position: fixed;
+  right: 0px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+      -ms-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}

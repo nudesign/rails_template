@@ -28,6 +28,7 @@ get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/st
 get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/app_wide_mixins_and_variables.css.scss',  'app/assets/stylesheets/app_wide_mixins_and_variables.css.scss'
 get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/fonts.css.scss',                          'app/assets/stylesheets/fonts.css.scss'
 get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/flash_messages.css.scss',                 'app/assets/stylesheets/flash_messages.css.scss'
+get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/forms.css.scss',                          'app/assets/stylesheets/forms.css.scss'
 
 # vendors stylesheets
 get 'https://raw.github.com/nudesign/rails_template/master/assets/stylesheets/vendor/bootstrap_forms.css',              'vendor/assets/stylesheets/bootstrap_forms.css'
