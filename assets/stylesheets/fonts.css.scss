@@ -1,0 +1,20 @@
+/* FONT SIZES, STYLES AND FAMILIES */
+
+/* styles/families */
+@mixin title($color: #000) {
+  color: $color;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+@mixin text($color: #000) {
+  color: $color;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+/* sizes */
+@mixin font1 {
+  font-size: 12px;
+  line-height: 15px;
+}

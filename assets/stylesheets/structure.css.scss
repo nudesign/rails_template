@@ -1,0 +1,42 @@
+/* STRUCTURE / GRID */
+$grid-gutter: 10px;
+$grid-halfgutter: 5px;
+$grid-column-size: 90px;
+
+@mixin grid($columns, $reduce-width: 0px, $mL: $grid-halfgutter, $mR: $grid-halfgutter) {
+  display: inline;
+  float: left;
+  margin-right: $mR;
+  margin-left: $mL;
+  position: relative;
+  width: (($columns * $grid-column-size) + (($columns - 1) * $grid-gutter)) - $reduce-width;
+}
+
+@mixin grid_auto($mL: ($grid-halfgutter), $mR: ($grid-halfgutter) ) {
+  display: inline;
+  float: left;
+  margin-right: $mR;
+  margin-left: $mL;
+  position: relative;
+  width: 'auto';
+}
+
+@mixin grid_father($columns, $reduce-width: 0px, $mL: 0px, $mR: 0px) {
+  display: inline;
+  float: left;
+  margin-right: $mR;
+  margin-left: $mL;
+  position: relative;
+  width: (($columns * $grid-column-size) + (($columns - 1) * $grid-gutter)) - $reduce-width + $grid-gutter;
+}
+
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}

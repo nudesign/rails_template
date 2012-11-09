@@ -1,0 +1,38 @@
+/* FLASH/FORM MESSAGES */
+#error_explanation,
+.form-messages,
+#notice {
+  @include text;
+  @include font1;
+  padding: 12px 12px 12px 12px;
+  margin: 12px 0px 24px 0px;
+  border-bottom-left-radius: 2px 2px;
+  border-bottom-right-radius: 2px 2px;
+  border-top-left-radius: 2px 2px;
+  border-top-right-radius: 2px 2px;
+}
+
+#error_explanation h2,
+.form-messages h2 {
+  @include title(#C00);
+  @include font1;
+  margin: 0px 0px 0px 0px;
+}
+
+#error_explanation ul,
+.form-messages ul {
+  list-style: disc inside;
+}
+
+#error_explanation,
+.form-messages.error {
+  color: #C00;
+  background: #FFEEEE;
+}
+
+#notice,
+.form-messages.success {
+  color: #3C3;
+  background: #DDFFDD;
+  font-weight: bold;
+}

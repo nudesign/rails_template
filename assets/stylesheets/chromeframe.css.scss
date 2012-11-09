@@ -1,0 +1,21 @@
+/* OLD BROWSER - CHROME FRAME ALERT */
+.chromeframe {
+  @include title;
+  @include font1;
+  padding: 12px 12px 12px 12px;
+  margin: 12px 0px 24px 0px;
+  border-bottom-left-radius: 2px 2px;
+  border-bottom-right-radius: 2px 2px;
+  border-top-left-radius: 2px 2px;
+  border-top-right-radius: 2px 2px;
+  .pt-BR, .en {
+    display: block;
+    margin: 12px 0px;
+  }
+  .en {
+    font-style: italic;
+  }
+  a {
+    color: inherit;
+  }
+}

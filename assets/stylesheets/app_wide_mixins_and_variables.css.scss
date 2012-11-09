@@ -1,0 +1,14 @@
+/* APP WIDE MIXINS AND VARIABLES */
+@mixin opacity($value) {
+  -ms-filter: $value * 100;
+  filter: $value * 100;
+  opacity: $value;
+}
+
+@mixin transition($property: '*', $duration: 500ms) {
+       -o-transition: $property $duration;
+     -moz-transition: $property $duration;
+      -ms-transition: $property $duration;
+  -webkit-transition: $property $duration;
+          transition: $property $duration;
+}
