@@ -58,6 +58,8 @@ group :development do
   gem 'guard-rspec', '~> 2.1.0'
   gem 'rb-fsevent',  '~> 0.9.0'
 
+  gem 'mongoid_colored_logger', '~> 0.2.2'
+
   # LiveReload
   gem 'guard-livereload', '~> 1.1.0'
   gem 'rack-livereload',  '~> 0.3.0'
