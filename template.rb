@@ -44,7 +44,7 @@ insert_into_file 'app/assets/javascripts/application.js', "//= require dispatche
 
 #locale files
 remove_file 'config/locales'
-directory 'https://raw.github.com/nudesign/rails_template/master/locales', 'config/locales'
+directory 'https://github.com/nudesign/rails_template/tree/master/locales', 'config/locales'
 
 # generators
 generate 'jasmine:install'
