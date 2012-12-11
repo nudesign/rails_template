@@ -34,10 +34,6 @@ gem 'media_magick', '~> 0.1.0'
 gem 'mini_magick',  '~> 3.4'
 gem 'piet',         '~> 0.1.0'
 
-group :development, :production do
-  gem 'mongodb_clone', '~> 0.0.1'
-end
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -53,12 +49,18 @@ end
 # To use debugger
 # gem 'debugger'
 
+group :development, :production do
+  gem 'mongodb_clone', '~> 0.0.1'
+end
+
 group :development do
   gem 'guard',       '~> 1.5.0'
   gem 'guard-rspec', '~> 2.1.0'
   gem 'rb-fsevent',  '~> 0.9.0'
 
   gem 'mongoid_colored_logger', '~> 0.2.2'
+
+  gem 'nu-generators', '~> 0.0.2'
 
   # LiveReload
   gem 'guard-livereload', '~> 1.1.0'

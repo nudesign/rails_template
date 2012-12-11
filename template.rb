@@ -45,13 +45,13 @@ insert_into_file 'app/assets/javascripts/application.js', "//= require dispatche
 
 #locale files
 remove_file 'config/locales'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/devise.en.yml', 'config/locales/devise.en.yml'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/devise.pt-BR.yml', 'config/locales/devise.pt-BR.yml'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/en.yml', 'config/locales/en.yml'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/mongoid.pt-BR.yml', 'config/locales/mongoid.pt-BR.yml'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/pt-BR.yml', 'config/locales/pt-BR.yml'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/publisher.en.yml', 'config/locales/publisher.en.yml'
-get 'https://github.com/nudesign/rails_template/tree/master/locales/publisher.pt-BR.yml', 'config/locales/publisher.pt-BR.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/devise.en.yml', 'config/locales/devise.en.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/devise.pt-BR.yml', 'config/locales/devise.pt-BR.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/en.yml', 'config/locales/en.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/mongoid.pt-BR.yml', 'config/locales/mongoid.pt-BR.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/pt-BR.yml', 'config/locales/pt-BR.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/publisher.en.yml', 'config/locales/publisher.en.yml'
+get 'https://raw.github.com/nudesign/rails_template/tree/master/locales/publisher.pt-BR.yml', 'config/locales/publisher.pt-BR.yml'
 
 # generators
 generate 'jasmine:install'
