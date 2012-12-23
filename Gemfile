@@ -18,12 +18,14 @@ group :assets do
 end
 
 gem 'dispatcher-rails', '~> 0.0.1'
-gem 'jquery-rails', '~> 2.1.0'
+gem 'jquery-rails',     '~> 2.1.0'
 
 gem 'devise',           '~> 2.1.0'
+gem 'mongoid_slug',     '~> 2.0.1'
 gem 'localized_fields', '~> 0.2.0'
 gem 'mongoid-textile',  '~> 0.2.0'
 gem 'publish',          '~> 0.1.0'
+gem 'mail_form',        '~> 1.4.1'
 
 # I18n
 gem 'devise-i18n', '~> 0.5.0'
