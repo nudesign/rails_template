@@ -1,4 +1,4 @@
-# Rails template
+# Rails template [![Dependency Status](https://gemnasium.com/nudesign/rails_template.png)](https://gemnasium.com/nudesign/rails_template)
 
 Whenever you want to create a new project, just do:
 
