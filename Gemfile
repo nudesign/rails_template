@@ -20,7 +20,7 @@ end
 gem 'dispatcher-rails', '~> 0.0.1'
 gem 'jquery-rails',     '~> 2.1.0'
 
-gem 'devise',           '~> 2.1.0'
+gem 'devise',           '~> 2.2.0'
 gem 'mongoid_slug',     '~> 2.0.1'
 gem 'localized_fields', '~> 0.2.0'
 gem 'mongoid-textile',  '~> 0.2.0'
@@ -32,7 +32,7 @@ gem 'devise-i18n', '~> 0.5.0'
 gem 'rails-i18n',  '~> 0.7.0'
 
 # MediaMagick
-gem 'media_magick', '~> 0.1.0'
+gem 'media_magick', '~> 0.2.0'
 gem 'mini_magick',  '~> 3.4'
 gem 'piet',         '~> 0.1.0'
 
@@ -52,12 +52,12 @@ gem 'piet',         '~> 0.1.0'
 # gem 'debugger'
 
 group :development, :production do
-  gem 'mongodb_clone', '~> 0.0.1'
+  gem 'mongodb_clone', '~> 0.1.0'
 end
 
 group :development do
-  gem 'guard',       '~> 1.5.0'
-  gem 'guard-rspec', '~> 2.1.0'
+  gem 'guard',       '~> 1.6.0'
+  gem 'guard-rspec', '~> 2.4.0'
   gem 'rb-fsevent',  '~> 0.9.0'
 
   gem 'mongoid_colored_logger', '~> 0.2.2'
@@ -73,8 +73,8 @@ group :development do
 end
 
 group :development, :test do
-  gem 'factory_girl_rails', '~> 4.1.0'
-  gem 'jasmine',            '~> 1.2.0'
+  gem 'factory_girl_rails', '~> 4.2.0'
+  gem 'jasmine',            '~> 1.3.0'
   gem 'rspec-rails',        '~> 2.12.0'
   gem 'capybara',           '>= 1.1.2'
 end
