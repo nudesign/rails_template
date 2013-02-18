@@ -69,7 +69,7 @@ group :development do
   gem 'rack-livereload',  '~> 0.3.0'
   gem 'yajl-ruby',        '~> 1.1.0'
 
-  gem 'better_errors',    '~> 0.3.2'
+  gem 'better_errors',    '~> 0.6.0'
 end
 
 group :development, :test do
