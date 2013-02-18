@@ -7,7 +7,7 @@ gem 'rails', '~> 3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mongoid', '~> 3.0.0'
+gem 'mongoid', '~> 3.1.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
