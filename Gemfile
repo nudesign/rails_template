@@ -29,7 +29,7 @@ gem 'rails-i18n',  '~> 0.7.0'
 
 # MediaMagick
 gem 'media_magick', '~> 0.2.0'
-gem 'mini_magick',  '~> 3.4'
+gem 'mini_magick',  '~> 3.5.0'
 gem 'piet',         '~> 0.1.0'
 
 group :development, :production do
