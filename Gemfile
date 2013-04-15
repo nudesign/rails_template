@@ -14,20 +14,20 @@ gem 'mongoid', '~> 3.1.0'
 group :assets do
   gem 'sass-rails', '~> 3.2.0'
 
-  gem 'uglifier', '~> 1.3.0'
+  gem 'uglifier', '~> 2.0.0'
 end
 
 gem 'dispatcher-rails', '~> 0.0.1'
 gem 'jquery-rails',     '~> 2.2.0'
 
 gem 'devise',           '~> 2.2.0'
-gem 'mongoid_slug',     '~> 2.0.1'
+gem 'mongoid_slug',     '~> 3.1.0'
 gem 'localized_fields', '~> 0.2.0'
 gem 'mongoid-textile',  '~> 0.2.0'
-gem 'publish',          '~> 0.1.0'
+gem 'publish',          '~> 0.3.0'
 
 # I18n
-gem 'devise-i18n', '~> 0.6.0'
+gem 'devise-i18n', '~> 0.8.0'
 gem 'rails-i18n',  '~> 0.7.0'
 
 # MediaMagick
@@ -55,24 +55,24 @@ group :development, :production do
 end
 
 group :development do
-  gem 'guard',       '~> 1.6.0'
-  gem 'guard-rspec', '~> 2.4.0'
+  gem 'guard',       '~> 1.7.0'
+  gem 'guard-rspec', '~> 2.5.0'
   gem 'rb-fsevent',  '~> 0.9.0'
 
   gem 'mongoid_colored_logger', '~> 0.2.2'
 
   # LiveReload
-  gem 'guard-livereload', '~> 1.1.0'
+  gem 'guard-livereload', '~> 1.2.0'
   gem 'rack-livereload',  '~> 0.3.0'
   gem 'yajl-ruby',        '~> 1.1.0'
 
-  gem 'better_errors',    '~> 0.6.0'
+  gem 'better_errors',    '~> 0.8.0'
 end
 
 group :development, :test do
   gem 'factory_girl_rails', '~> 4.2.0'
   gem 'jasmine',            '~> 1.3.0'
-  gem 'rspec-rails',        '~> 2.12.0'
+  gem 'rspec-rails',        '~> 2.13.0'
   gem 'capybara',           '>= 1.1.2'
 end
 
