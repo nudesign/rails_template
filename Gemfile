@@ -25,7 +25,6 @@ gem 'mongoid_slug',     '~> 2.0.1'
 gem 'localized_fields', '~> 0.2.0'
 gem 'mongoid-textile',  '~> 0.2.0'
 gem 'publish',          '~> 0.1.0'
-gem 'mail_form',        '~> 1.4.1'
 
 # I18n
 gem 'devise-i18n', '~> 0.6.0'
@@ -61,8 +60,6 @@ group :development do
   gem 'rb-fsevent',  '~> 0.9.0'
 
   gem 'mongoid_colored_logger', '~> 0.2.2'
-
-  gem 'nu-generators', '~> 0.0.2'
 
   # LiveReload
   gem 'guard-livereload', '~> 1.1.0'
