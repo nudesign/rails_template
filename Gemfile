@@ -37,6 +37,10 @@ group :development, :production do
 end
 
 group :development do
+  # Better Errors
+  gem 'better_errors',     '~> 0.8.0'
+  gem 'binding_of_caller', '~> 0.7.0'
+
   gem 'guard',       '~> 1.7.0'
   gem 'guard-rspec', '~> 2.5.0'
   gem 'rb-fsevent',  '~> 0.9.0'
@@ -47,8 +51,6 @@ group :development do
   gem 'guard-livereload', '~> 1.2.0'
   gem 'rack-livereload',  '~> 0.3.0'
   gem 'yajl-ruby',        '~> 1.1.0'
-
-  gem 'better_errors',    '~> 0.8.0'
 end
 
 group :development, :test do
