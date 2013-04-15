@@ -45,9 +45,14 @@ group :development do
   gem 'clean_logger',           '~> 0.0.1'
   gem 'mongoid_colored_logger', '~> 0.2.0'
 
+  # Guard
   gem 'guard',       '~> 1.7.0'
   gem 'guard-rspec', '~> 2.5.0'
   gem 'rb-fsevent',  '~> 0.9.0'
+
+  # Guard notifiers
+  gem 'growl',                   '~> 1.0.0' # Growl
+  gem 'terminal-notifier-guard', '~> 1.5.0' # Notification Center
 
   # LiveReload
   gem 'guard-livereload', '~> 1.2.0'
