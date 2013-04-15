@@ -41,11 +41,13 @@ group :development do
   gem 'better_errors',     '~> 0.8.0'
   gem 'binding_of_caller', '~> 0.7.0'
 
+  # Log
+  gem 'clean_logger',           '~> 0.0.1'
+  gem 'mongoid_colored_logger', '~> 0.2.0'
+
   gem 'guard',       '~> 1.7.0'
   gem 'guard-rspec', '~> 2.5.0'
   gem 'rb-fsevent',  '~> 0.9.0'
-
-  gem 'mongoid_colored_logger', '~> 0.2.0'
 
   # LiveReload
   gem 'guard-livereload', '~> 1.2.0'
