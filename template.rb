@@ -41,19 +41,19 @@ get "#{base_url}/assets/stylesheets/vendor/hugrid.css",                       'v
 # vendor javascripts
 get "#{base_url}/assets/javascripts/vendor/hugrid.js",                        'vendor/assets/javascripts/hugrid.js'
 get "#{base_url}/assets/javascripts/vendor/modernizr.js",                     'vendor/assets/javascripts/modernizr.js'
-insert_into_file 'app/assets/javascripts/application.js', "//= require hugrid\n", after: "//= require jquery_ujs\n"
-insert_into_file 'app/assets/javascripts/application.js', "//= require modernizr\n", after: "//= require jquery_ujs\n"
-insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require jquery_ujs\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require hugrid\n", after: "//= require turbolinks\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require modernizr\n", after: "//= require turbolinks\n"
+insert_into_file 'app/assets/javascripts/application.js', "//= require dispatcher\n", after: "//= require turbolinks\n"
 
 #locale files
-remove_file 'config/locales'
-get "#{base_url}/locales/devise.en.yml",       'config/locales/devise.en.yml'
-get "#{base_url}/locales/devise.pt-BR.yml",    'config/locales/devise.pt-BR.yml'
-get "#{base_url}/locales/en.yml",              'config/locales/en.yml'
-get "#{base_url}/locales/mongoid.pt-BR.yml",   'config/locales/mongoid.pt-BR.yml'
-get "#{base_url}/locales/pt-BR.yml",           'config/locales/pt-BR.yml'
-get "#{base_url}/locales/publisher.en.yml",    'config/locales/publisher.en.yml'
-get "#{base_url}/locales/publisher.pt-BR.yml", 'config/locales/publisher.pt-BR.yml'
+# remove_file 'config/locales'
+# get "#{base_url}/locales/devise.en.yml",       'config/locales/devise.en.yml'
+# get "#{base_url}/locales/devise.pt-BR.yml",    'config/locales/devise.pt-BR.yml'
+# get "#{base_url}/locales/en.yml",              'config/locales/en.yml'
+# get "#{base_url}/locales/mongoid.pt-BR.yml",   'config/locales/mongoid.pt-BR.yml'
+# get "#{base_url}/locales/pt-BR.yml",           'config/locales/pt-BR.yml'
+# get "#{base_url}/locales/publisher.en.yml",    'config/locales/publisher.en.yml'
+# get "#{base_url}/locales/publisher.pt-BR.yml", 'config/locales/publisher.pt-BR.yml'
 
 # generators
 generate 'jasmine:install'
@@ -65,10 +65,6 @@ insert_into_file 'config/environments/development.rb', "\n  config.middleware.in
 
 generate 'devise:install'
 generate 'devise', 'User'
-
-# remove unnecessary files
-remove_file 'public/index.html'
-remove_file 'app/assets/images/rails.png'
 
 # add default home controller and route
 run 'rails g controller home index --view-specs'

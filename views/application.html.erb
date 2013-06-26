@@ -14,7 +14,7 @@
   <![endif]-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= dispatcher_tag %>
   <meta name="author" content="nu [nudesign.com.br]">
@@ -29,9 +29,9 @@
 
   <% unless notice.nil? %><p id="notice"><%= notice %></p><% end %>
 
-<%= yield %>
+  <%= yield %>
 
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= render "grid" if Rails.env.development? %>
 </body>
 </html>
