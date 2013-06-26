@@ -22,7 +22,7 @@ gem 'mongoid-textile',  '~> 0.2.0'
 gem 'publish',          '~> 0.3.0'
 
 gem 'draper',           '~> 1.2.1'
-gem 'mail_form',        '~> 1.4.1'
+# gem 'mail_form',        '~> 1.4.1'
 
 # I18n
 gem 'devise-i18n', '~> 0.8.5'
