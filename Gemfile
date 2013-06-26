@@ -39,7 +39,7 @@ group :doc do
 end
 
 group :development, :production do
-  gem 'mongodb_clone', '~> 0.1.0'
+  # gem 'mongodb_clone', '~> 0.1.0'
 end
 
 group :development do
