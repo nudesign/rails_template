@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', github: 'plataformatec/devise'
 
 gem 'mongoid_slug',     '~> 3.1.1'
-gem 'localized_fields', '~> 0.2.0'
+# gem 'localized_fields', '~> 0.2.0'
 gem 'mongoid-textile',  '~> 0.2.0'
 gem 'publish',          '~> 0.3.0'
 
