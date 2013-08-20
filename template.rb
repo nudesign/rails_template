@@ -1,4 +1,4 @@
-base_url = 'https://raw.github.com/nudesign/rails_template/master'
+base_url = 'https://raw.github.com/nudesign/rails_template/rails3'
 
 # gemfile
 remove_file 'Gemfile'
